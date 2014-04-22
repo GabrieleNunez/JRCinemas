@@ -12,3 +12,5 @@ BUILD SOURCE AT YOUR OWN RISK
 =======================
 
 Alot to fix but majority is functional and IT DOES work
+
+This application does use P2P protocol and is powered through MonoTorrent. For communicating to YIFY it uses Newtonsoft JSON library
