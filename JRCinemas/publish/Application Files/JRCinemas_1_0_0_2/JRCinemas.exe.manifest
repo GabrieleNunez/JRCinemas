@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="JRCinemas.exe" version="1.0.0.2" publicKeyToken="fa076516c0e881fc" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="JRCinemas" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="JRCinemas.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JRCinemaControls.dll" size="22016">
+      <assemblyIdentity name="JRCinemaControls" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>F1THsJqwoLGzxO2sBpvS0YjoIeY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JRCinemas.exe" size="379904">
+      <assemblyIdentity name="JRCinemas" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KacmGxmQaPSvBFhtTgI67zitU/I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MonoTorrent.dll" size="356352">
+      <assemblyIdentity name="MonoTorrent" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>D7+DX1YmUC0JbWwRLD2cUaO8ADw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MonoTorrent.Dht.dll" size="54784">
+      <assemblyIdentity name="MonoTorrent.Dht" version="0.70.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>uxuv437DVHrmxzmPy4/wI0LQ7Qo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="455680">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>IIxQ6mcnPcbOk7tgZ6PMhxkqpLg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Icon.ico" size="165603">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fnSgjpUPYbnkYIYRAqUTypfkahk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JRCinemas.exe.config" size="159">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1MarUy3RuVvHLdw5ozZo3o7j39I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LICENSE.txt" size="34841">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TrFt6NqM6hBjVtNKd1Ts5n4vniY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="README.txt" size="546">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4FF1tuBGJ2ZI71nJdRpNdfoNi50=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GABE-LAPTOP\Gabriele" issuerKeyHash="b48295b58f88a240854dbce9e710922cf2c7be33" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WAd8u2O3X4y1J31cUSBO5P+okzw=</DigestValue></Reference></SignedInfo><SignatureValue>aTmwqMNi5iIU3IcpIfLuhmJqA7pydvj0lgAMqCFjHFaqgPs92yR15kWopi9e07tQ3ChrpRoANZU6lto40mKbNZQz5oUgRrs4uraaaBzvfG56Dpb6fOqUwaOlUKP409RiEHCWlG2RUipw7eJj7EdTgTsQV4C4iYRpslDMPKn3pms=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>m4Gfty75ysOalcJI+oPjwEgvZ6lJasn89lF+UwUvnaUSmLj+y20BofGnrKEXU+l6nv1RFsoc+TJatLylDqGOM5njp8h9Xah04HOayrsCU+JUmHP3C17PmMzxEOpi0rO8ECjaXp16UjosM9OxiGsONiO7o7Eh5uDZ0s65VDCExBc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3c93a8ffe44e20515c7d27b58c5fb763bb7c0758" Description="" Url=""><as:assemblyIdentity name="JRCinemas.exe" version="1.0.0.2" publicKeyToken="fa076516c0e881fc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GABE-LAPTOP\Gabriele</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>tibkfhdwLM2w8QuuJpH30VaxeAA=</DigestValue></Reference></SignedInfo><SignatureValue>I+BziwLoZ3dFeuQIqyYji68WM3fl5CwcFgURb0YIeOk0PDrIyVK5nn1qQl7lwBgw2l61FqTStx2tPp7ITQJMOa5++N7vG7B3dZwFzJV1O9csA/mInOIAvMoEuQioaCciCxvTrZRd3ArhzHNzOZ3h0vT0kAqVV8LtD+R5UtfYqV0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>m4Gfty75ysOalcJI+oPjwEgvZ6lJasn89lF+UwUvnaUSmLj+y20BofGnrKEXU+l6nv1RFsoc+TJatLylDqGOM5njp8h9Xah04HOayrsCU+JUmHP3C17PmMzxEOpi0rO8ECjaXp16UjosM9OxiGsONiO7o7Eh5uDZ0s65VDCExBc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQJa4B9i8eT5xIvpzKibrlUzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigARwBBAEIARQAtAEwAQQBQAFQATwBQAFwARwBhAGIAcgBpAGUAbABlMB4XDTE0MDEwNTE1NDY1MFoXDTE1MDEwNTIxNDY1MFowMzExMC8GA1UEAx4oAEcAQQBCAEUALQBMAEEAUABUAE8AUABcAEcAYQBiAHIAaQBlAGwAZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAm4Gfty75ysOalcJI+oPjwEgvZ6lJasn89lF+UwUvnaUSmLj+y20BofGnrKEXU+l6nv1RFsoc+TJatLylDqGOM5njp8h9Xah04HOayrsCU+JUmHP3C17PmMzxEOpi0rO8ECjaXp16UjosM9OxiGsONiO7o7Eh5uDZ0s65VDCExBcCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCThp2WEOtjih2Qoild54EJH0NLDA8fVUaNT0Qg2272onbio0N/ONzDEsXAUPpGoUQGmidws5eGpnFAlldfBhiWTQyUWfPsi5PLMxcRVO1jI7r6bvdhK5UUKNstrze6c4mt9B5dXKB7AmwKNKFiNJ1esnigKV7yGL4UxaNM697CmA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
