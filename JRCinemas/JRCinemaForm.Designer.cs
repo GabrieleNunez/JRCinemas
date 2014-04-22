@@ -34,81 +34,81 @@
             this.label1 = new System.Windows.Forms.Label();
             this.settingsTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.externalSettingsGroupBox = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.externalClientPathTextBox = new System.Windows.Forms.TextBox();
-            this.browseExternalClientButton = new System.Windows.Forms.Button();
-            this.externalClientArgsTextbox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.internalSettingsGroupBox = new System.Windows.Forms.GroupBox();
-            this.peerExchangeCheckBox = new System.Windows.Forms.CheckBox();
-            this.encryptionCheckBox = new System.Windows.Forms.CheckBox();
-            this.dhtCheckBox = new System.Windows.Forms.CheckBox();
-            this.incomingPortNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.globalMaxConnNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.perTorrentMaxNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.internalEngineRadioButton = new System.Windows.Forms.RadioButton();
             this.externalEngineRadioButton = new System.Windows.Forms.RadioButton();
+            this.internalEngineRadioButton = new System.Windows.Forms.RadioButton();
+            this.internalSettingsGroupBox = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.perTorrentMaxNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.globalMaxConnNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.incomingPortNumeric = new System.Windows.Forms.NumericUpDown();
+            this.dhtCheckBox = new System.Windows.Forms.CheckBox();
+            this.encryptionCheckBox = new System.Windows.Forms.CheckBox();
+            this.peerExchangeCheckBox = new System.Windows.Forms.CheckBox();
+            this.externalSettingsGroupBox = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.externalClientArgsTextbox = new System.Windows.Forms.TextBox();
+            this.browseExternalClientButton = new System.Windows.Forms.Button();
+            this.externalClientPathTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.downloadTab = new System.Windows.Forms.TabPage();
             this.downloadFlowlayout = new System.Windows.Forms.FlowLayoutPanel();
             this.searchTab = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.clearResultsButton = new System.Windows.Forms.Button();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.genreSearchRadioButton = new System.Windows.Forms.RadioButton();
-            this.keywordSearchRadioButton = new System.Windows.Forms.RadioButton();
-            this.searchTextBox = new System.Windows.Forms.TextBox();
             this.yifySplitContainer = new System.Windows.Forms.SplitContainer();
-            this.detailsPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.resolutionLabel = new System.Windows.Forms.Label();
-            this.qualityLabel = new System.Windows.Forms.Label();
-            this.languageLabel = new System.Windows.Forms.Label();
-            this.movieTitleLabel = new System.Windows.Forms.Label();
-            this.dateAddedLabel = new System.Windows.Forms.Label();
-            this.subtitlesLabel = new System.Windows.Forms.Label();
-            this.framerateLabel = new System.Windows.Forms.Label();
-            this.youtubeLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.imdbLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.movieRuntimeLabel = new System.Windows.Forms.Label();
-            this.fileSizeLabel = new System.Windows.Forms.Label();
-            this.genreLabel = new System.Windows.Forms.Label();
-            this.timesDownloadedLabel = new System.Windows.Forms.Label();
-            this.seedersLabel = new System.Windows.Forms.Label();
-            this.peersLabel = new System.Windows.Forms.Label();
-            this.downloadButton = new System.Windows.Forms.Button();
-            this.searchImageBox = new System.Windows.Forms.PictureBox();
-            this.descriptionTextBox = new System.Windows.Forms.RichTextBox();
             this.resultListBox = new System.Windows.Forms.ListBox();
-            this.jrCinemaTabControl = new System.Windows.Forms.TabControl();
-            this.upcomingMoviesButton = new System.Windows.Forms.Button();
+            this.detailsPanel = new System.Windows.Forms.Panel();
+            this.descriptionTextBox = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.searchImageBox = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.downloadButton = new System.Windows.Forms.Button();
+            this.peersLabel = new System.Windows.Forms.Label();
+            this.seedersLabel = new System.Windows.Forms.Label();
+            this.timesDownloadedLabel = new System.Windows.Forms.Label();
+            this.genreLabel = new System.Windows.Forms.Label();
+            this.fileSizeLabel = new System.Windows.Forms.Label();
+            this.movieRuntimeLabel = new System.Windows.Forms.Label();
+            this.imdbLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.youtubeLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.framerateLabel = new System.Windows.Forms.Label();
+            this.subtitlesLabel = new System.Windows.Forms.Label();
+            this.dateAddedLabel = new System.Windows.Forms.Label();
+            this.movieTitleLabel = new System.Windows.Forms.Label();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.qualityLabel = new System.Windows.Forms.Label();
+            this.resolutionLabel = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.keywordSearchRadioButton = new System.Windows.Forms.RadioButton();
+            this.genreSearchRadioButton = new System.Windows.Forms.RadioButton();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.clearResultsButton = new System.Windows.Forms.Button();
             this.latestMoviesButton = new System.Windows.Forms.Button();
+            this.upcomingMoviesButton = new System.Windows.Forms.Button();
+            this.jrCinemaTabControl = new System.Windows.Forms.TabControl();
             this.aboutTab.SuspendLayout();
             this.panel1.SuspendLayout();
             this.settingsTab.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.externalSettingsGroupBox.SuspendLayout();
-            this.internalSettingsGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.incomingPortNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.globalMaxConnNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perTorrentMaxNumeric)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.internalSettingsGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.perTorrentMaxNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.globalMaxConnNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomingPortNumeric)).BeginInit();
+            this.externalSettingsGroupBox.SuspendLayout();
             this.downloadTab.SuspendLayout();
             this.searchTab.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yifySplitContainer)).BeginInit();
             this.yifySplitContainer.Panel1.SuspendLayout();
             this.yifySplitContainer.Panel2.SuspendLayout();
             this.yifySplitContainer.SuspendLayout();
             this.detailsPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchImageBox)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.jrCinemaTabControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,64 +167,40 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(977, 466);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // externalSettingsGroupBox
+            // groupBox3
             // 
-            this.externalSettingsGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.externalSettingsGroupBox.Controls.Add(this.label6);
-            this.externalSettingsGroupBox.Controls.Add(this.externalClientArgsTextbox);
-            this.externalSettingsGroupBox.Controls.Add(this.browseExternalClientButton);
-            this.externalSettingsGroupBox.Controls.Add(this.externalClientPathTextBox);
-            this.externalSettingsGroupBox.Controls.Add(this.label5);
-            this.externalSettingsGroupBox.Location = new System.Drawing.Point(3, 145);
-            this.externalSettingsGroupBox.Name = "externalSettingsGroupBox";
-            this.externalSettingsGroupBox.Size = new System.Drawing.Size(969, 85);
-            this.externalSettingsGroupBox.TabIndex = 1;
-            this.externalSettingsGroupBox.TabStop = false;
-            this.externalSettingsGroupBox.Text = "External Settings";
+            this.groupBox3.Controls.Add(this.externalEngineRadioButton);
+            this.groupBox3.Controls.Add(this.internalEngineRadioButton);
+            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(969, 47);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Download Engine";
             // 
-            // label5
+            // externalEngineRadioButton
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "External Client Path:";
+            this.externalEngineRadioButton.AutoSize = true;
+            this.externalEngineRadioButton.Location = new System.Drawing.Point(98, 20);
+            this.externalEngineRadioButton.Name = "externalEngineRadioButton";
+            this.externalEngineRadioButton.Size = new System.Drawing.Size(63, 17);
+            this.externalEngineRadioButton.TabIndex = 1;
+            this.externalEngineRadioButton.TabStop = true;
+            this.externalEngineRadioButton.Text = "External";
+            this.externalEngineRadioButton.UseVisualStyleBackColor = true;
+            this.externalEngineRadioButton.CheckedChanged += new System.EventHandler(this.externalEngineRadioButton_CheckedChanged);
             // 
-            // externalClientPathTextBox
+            // internalEngineRadioButton
             // 
-            this.externalClientPathTextBox.Location = new System.Drawing.Point(172, 19);
-            this.externalClientPathTextBox.Name = "externalClientPathTextBox";
-            this.externalClientPathTextBox.Size = new System.Drawing.Size(791, 20);
-            this.externalClientPathTextBox.TabIndex = 1;
-            // 
-            // browseExternalClientButton
-            // 
-            this.browseExternalClientButton.Location = new System.Drawing.Point(114, 17);
-            this.browseExternalClientButton.Name = "browseExternalClientButton";
-            this.browseExternalClientButton.Size = new System.Drawing.Size(52, 23);
-            this.browseExternalClientButton.TabIndex = 2;
-            this.browseExternalClientButton.Text = "Browse";
-            this.browseExternalClientButton.UseVisualStyleBackColor = true;
-            this.browseExternalClientButton.Click += new System.EventHandler(this.browseExternalClientButton_Click);
-            // 
-            // externalClientArgsTextbox
-            // 
-            this.externalClientArgsTextbox.Location = new System.Drawing.Point(172, 45);
-            this.externalClientArgsTextbox.Name = "externalClientArgsTextbox";
-            this.externalClientArgsTextbox.Size = new System.Drawing.Size(791, 20);
-            this.externalClientArgsTextbox.TabIndex = 3;
-            this.externalClientArgsTextbox.TextChanged += new System.EventHandler(this.externalClientArgsTextbox_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 52);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "External Client Arguments:";
+            this.internalEngineRadioButton.AutoSize = true;
+            this.internalEngineRadioButton.Location = new System.Drawing.Point(7, 20);
+            this.internalEngineRadioButton.Name = "internalEngineRadioButton";
+            this.internalEngineRadioButton.Size = new System.Drawing.Size(60, 17);
+            this.internalEngineRadioButton.TabIndex = 0;
+            this.internalEngineRadioButton.TabStop = true;
+            this.internalEngineRadioButton.Text = "Internal";
+            this.internalEngineRadioButton.UseVisualStyleBackColor = true;
+            this.internalEngineRadioButton.CheckedChanged += new System.EventHandler(this.internalEngineRadioButton_CheckedChanged);
             // 
             // internalSettingsGroupBox
             // 
@@ -246,82 +222,14 @@
             this.internalSettingsGroupBox.TabStop = false;
             this.internalSettingsGroupBox.Text = "Internal Settings";
             // 
-            // peerExchangeCheckBox
+            // label4
             // 
-            this.peerExchangeCheckBox.AutoSize = true;
-            this.peerExchangeCheckBox.Location = new System.Drawing.Point(161, 57);
-            this.peerExchangeCheckBox.Name = "peerExchangeCheckBox";
-            this.peerExchangeCheckBox.Size = new System.Drawing.Size(99, 17);
-            this.peerExchangeCheckBox.TabIndex = 0;
-            this.peerExchangeCheckBox.Text = "Peer Exchange";
-            this.peerExchangeCheckBox.UseVisualStyleBackColor = true;
-            this.peerExchangeCheckBox.CheckedChanged += new System.EventHandler(this.peerExchangeCheckBox_CheckedChanged);
-            // 
-            // encryptionCheckBox
-            // 
-            this.encryptionCheckBox.AutoSize = true;
-            this.encryptionCheckBox.Location = new System.Drawing.Point(79, 57);
-            this.encryptionCheckBox.Name = "encryptionCheckBox";
-            this.encryptionCheckBox.Size = new System.Drawing.Size(76, 17);
-            this.encryptionCheckBox.TabIndex = 1;
-            this.encryptionCheckBox.Text = "Encryption";
-            this.encryptionCheckBox.UseVisualStyleBackColor = true;
-            this.encryptionCheckBox.CheckedChanged += new System.EventHandler(this.encryptionCheckBox_CheckedChanged);
-            // 
-            // dhtCheckBox
-            // 
-            this.dhtCheckBox.AutoSize = true;
-            this.dhtCheckBox.Location = new System.Drawing.Point(20, 57);
-            this.dhtCheckBox.Name = "dhtCheckBox";
-            this.dhtCheckBox.Size = new System.Drawing.Size(43, 17);
-            this.dhtCheckBox.TabIndex = 2;
-            this.dhtCheckBox.Text = "Dht";
-            this.dhtCheckBox.UseVisualStyleBackColor = true;
-            this.dhtCheckBox.CheckedChanged += new System.EventHandler(this.dhtCheckBox_CheckedChanged);
-            // 
-            // incomingPortNumeric
-            // 
-            this.incomingPortNumeric.Location = new System.Drawing.Point(98, 19);
-            this.incomingPortNumeric.Maximum = new decimal(new int[] {
-            1215752191,
-            23,
-            0,
-            0});
-            this.incomingPortNumeric.Name = "incomingPortNumeric";
-            this.incomingPortNumeric.Size = new System.Drawing.Size(120, 20);
-            this.incomingPortNumeric.TabIndex = 3;
-            this.incomingPortNumeric.ValueChanged += new System.EventHandler(this.incomingPortNumeric_ValueChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Incoming Port:";
-            // 
-            // globalMaxConnNumeric
-            // 
-            this.globalMaxConnNumeric.Location = new System.Drawing.Point(355, 19);
-            this.globalMaxConnNumeric.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.globalMaxConnNumeric.Name = "globalMaxConnNumeric";
-            this.globalMaxConnNumeric.Size = new System.Drawing.Size(120, 20);
-            this.globalMaxConnNumeric.TabIndex = 5;
-            this.globalMaxConnNumeric.ValueChanged += new System.EventHandler(this.globalMaxConnNumeric_ValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(224, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Global Max Connections:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(481, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Per Torrent Max Connections:";
             // 
             // perTorrentMaxNumeric
             // 
@@ -336,49 +244,141 @@
             this.perTorrentMaxNumeric.TabIndex = 7;
             this.perTorrentMaxNumeric.ValueChanged += new System.EventHandler(this.perTorrentMaxNumeric_ValueChanged);
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(481, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Per Torrent Max Connections:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(224, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Global Max Connections:";
             // 
-            // groupBox3
+            // globalMaxConnNumeric
             // 
-            this.groupBox3.Controls.Add(this.externalEngineRadioButton);
-            this.groupBox3.Controls.Add(this.internalEngineRadioButton);
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(969, 47);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Download Engine";
+            this.globalMaxConnNumeric.Location = new System.Drawing.Point(355, 19);
+            this.globalMaxConnNumeric.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.globalMaxConnNumeric.Name = "globalMaxConnNumeric";
+            this.globalMaxConnNumeric.Size = new System.Drawing.Size(120, 20);
+            this.globalMaxConnNumeric.TabIndex = 5;
+            this.globalMaxConnNumeric.ValueChanged += new System.EventHandler(this.globalMaxConnNumeric_ValueChanged);
             // 
-            // internalEngineRadioButton
+            // label2
             // 
-            this.internalEngineRadioButton.AutoSize = true;
-            this.internalEngineRadioButton.Location = new System.Drawing.Point(7, 20);
-            this.internalEngineRadioButton.Name = "internalEngineRadioButton";
-            this.internalEngineRadioButton.Size = new System.Drawing.Size(60, 17);
-            this.internalEngineRadioButton.TabIndex = 0;
-            this.internalEngineRadioButton.TabStop = true;
-            this.internalEngineRadioButton.Text = "Internal";
-            this.internalEngineRadioButton.UseVisualStyleBackColor = true;
-            this.internalEngineRadioButton.CheckedChanged += new System.EventHandler(this.internalEngineRadioButton_CheckedChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Incoming Port:";
             // 
-            // externalEngineRadioButton
+            // incomingPortNumeric
             // 
-            this.externalEngineRadioButton.AutoSize = true;
-            this.externalEngineRadioButton.Location = new System.Drawing.Point(98, 20);
-            this.externalEngineRadioButton.Name = "externalEngineRadioButton";
-            this.externalEngineRadioButton.Size = new System.Drawing.Size(63, 17);
-            this.externalEngineRadioButton.TabIndex = 1;
-            this.externalEngineRadioButton.TabStop = true;
-            this.externalEngineRadioButton.Text = "External";
-            this.externalEngineRadioButton.UseVisualStyleBackColor = true;
-            this.externalEngineRadioButton.CheckedChanged += new System.EventHandler(this.externalEngineRadioButton_CheckedChanged);
+            this.incomingPortNumeric.Location = new System.Drawing.Point(98, 19);
+            this.incomingPortNumeric.Maximum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            0});
+            this.incomingPortNumeric.Name = "incomingPortNumeric";
+            this.incomingPortNumeric.Size = new System.Drawing.Size(120, 20);
+            this.incomingPortNumeric.TabIndex = 3;
+            this.incomingPortNumeric.ValueChanged += new System.EventHandler(this.incomingPortNumeric_ValueChanged);
+            // 
+            // dhtCheckBox
+            // 
+            this.dhtCheckBox.AutoSize = true;
+            this.dhtCheckBox.Location = new System.Drawing.Point(20, 57);
+            this.dhtCheckBox.Name = "dhtCheckBox";
+            this.dhtCheckBox.Size = new System.Drawing.Size(43, 17);
+            this.dhtCheckBox.TabIndex = 2;
+            this.dhtCheckBox.Text = "Dht";
+            this.dhtCheckBox.UseVisualStyleBackColor = true;
+            this.dhtCheckBox.CheckedChanged += new System.EventHandler(this.dhtCheckBox_CheckedChanged);
+            // 
+            // encryptionCheckBox
+            // 
+            this.encryptionCheckBox.AutoSize = true;
+            this.encryptionCheckBox.Location = new System.Drawing.Point(79, 57);
+            this.encryptionCheckBox.Name = "encryptionCheckBox";
+            this.encryptionCheckBox.Size = new System.Drawing.Size(76, 17);
+            this.encryptionCheckBox.TabIndex = 1;
+            this.encryptionCheckBox.Text = "Encryption";
+            this.encryptionCheckBox.UseVisualStyleBackColor = true;
+            this.encryptionCheckBox.CheckedChanged += new System.EventHandler(this.encryptionCheckBox_CheckedChanged);
+            // 
+            // peerExchangeCheckBox
+            // 
+            this.peerExchangeCheckBox.AutoSize = true;
+            this.peerExchangeCheckBox.Location = new System.Drawing.Point(161, 57);
+            this.peerExchangeCheckBox.Name = "peerExchangeCheckBox";
+            this.peerExchangeCheckBox.Size = new System.Drawing.Size(99, 17);
+            this.peerExchangeCheckBox.TabIndex = 0;
+            this.peerExchangeCheckBox.Text = "Peer Exchange";
+            this.peerExchangeCheckBox.UseVisualStyleBackColor = true;
+            this.peerExchangeCheckBox.CheckedChanged += new System.EventHandler(this.peerExchangeCheckBox_CheckedChanged);
+            // 
+            // externalSettingsGroupBox
+            // 
+            this.externalSettingsGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.externalSettingsGroupBox.Controls.Add(this.label6);
+            this.externalSettingsGroupBox.Controls.Add(this.externalClientArgsTextbox);
+            this.externalSettingsGroupBox.Controls.Add(this.browseExternalClientButton);
+            this.externalSettingsGroupBox.Controls.Add(this.externalClientPathTextBox);
+            this.externalSettingsGroupBox.Controls.Add(this.label5);
+            this.externalSettingsGroupBox.Location = new System.Drawing.Point(3, 145);
+            this.externalSettingsGroupBox.Name = "externalSettingsGroupBox";
+            this.externalSettingsGroupBox.Size = new System.Drawing.Size(969, 85);
+            this.externalSettingsGroupBox.TabIndex = 1;
+            this.externalSettingsGroupBox.TabStop = false;
+            this.externalSettingsGroupBox.Text = "External Settings";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "External Client Arguments:";
+            // 
+            // externalClientArgsTextbox
+            // 
+            this.externalClientArgsTextbox.Location = new System.Drawing.Point(172, 45);
+            this.externalClientArgsTextbox.Name = "externalClientArgsTextbox";
+            this.externalClientArgsTextbox.Size = new System.Drawing.Size(791, 20);
+            this.externalClientArgsTextbox.TabIndex = 3;
+            this.externalClientArgsTextbox.TextChanged += new System.EventHandler(this.externalClientArgsTextbox_TextChanged);
+            // 
+            // browseExternalClientButton
+            // 
+            this.browseExternalClientButton.Location = new System.Drawing.Point(114, 17);
+            this.browseExternalClientButton.Name = "browseExternalClientButton";
+            this.browseExternalClientButton.Size = new System.Drawing.Size(52, 23);
+            this.browseExternalClientButton.TabIndex = 2;
+            this.browseExternalClientButton.Text = "Browse";
+            this.browseExternalClientButton.UseVisualStyleBackColor = true;
+            this.browseExternalClientButton.Click += new System.EventHandler(this.browseExternalClientButton_Click);
+            // 
+            // externalClientPathTextBox
+            // 
+            this.externalClientPathTextBox.Location = new System.Drawing.Point(172, 19);
+            this.externalClientPathTextBox.Name = "externalClientPathTextBox";
+            this.externalClientPathTextBox.Size = new System.Drawing.Size(791, 20);
+            this.externalClientPathTextBox.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "External Client Path:";
             // 
             // downloadTab
             // 
@@ -410,74 +410,6 @@
             this.searchTab.Text = "Search";
             this.searchTab.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.searchTextBox);
-            this.flowLayoutPanel2.Controls.Add(this.keywordSearchRadioButton);
-            this.flowLayoutPanel2.Controls.Add(this.genreSearchRadioButton);
-            this.flowLayoutPanel2.Controls.Add(this.searchButton);
-            this.flowLayoutPanel2.Controls.Add(this.clearResultsButton);
-            this.flowLayoutPanel2.Controls.Add(this.latestMoviesButton);
-            this.flowLayoutPanel2.Controls.Add(this.upcomingMoviesButton);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(977, 27);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // clearResultsButton
-            // 
-            this.clearResultsButton.AutoSize = true;
-            this.clearResultsButton.Location = new System.Drawing.Point(538, 3);
-            this.clearResultsButton.Name = "clearResultsButton";
-            this.clearResultsButton.Size = new System.Drawing.Size(79, 23);
-            this.clearResultsButton.TabIndex = 4;
-            this.clearResultsButton.Text = "Clear Results";
-            this.clearResultsButton.UseVisualStyleBackColor = true;
-            this.clearResultsButton.Click += new System.EventHandler(this.clearResultsButton_Click);
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(457, 3);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
-            this.searchButton.TabIndex = 1;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
-            // genreSearchRadioButton
-            // 
-            this.genreSearchRadioButton.AutoSize = true;
-            this.genreSearchRadioButton.Location = new System.Drawing.Point(360, 3);
-            this.genreSearchRadioButton.Name = "genreSearchRadioButton";
-            this.genreSearchRadioButton.Size = new System.Drawing.Size(91, 17);
-            this.genreSearchRadioButton.TabIndex = 6;
-            this.genreSearchRadioButton.Text = "Genre Search";
-            this.genreSearchRadioButton.UseVisualStyleBackColor = true;
-            this.genreSearchRadioButton.CheckedChanged += new System.EventHandler(this.genreSearchRadioButton_CheckedChanged);
-            // 
-            // keywordSearchRadioButton
-            // 
-            this.keywordSearchRadioButton.AutoSize = true;
-            this.keywordSearchRadioButton.Checked = true;
-            this.keywordSearchRadioButton.Location = new System.Drawing.Point(251, 3);
-            this.keywordSearchRadioButton.Name = "keywordSearchRadioButton";
-            this.keywordSearchRadioButton.Size = new System.Drawing.Size(103, 17);
-            this.keywordSearchRadioButton.TabIndex = 5;
-            this.keywordSearchRadioButton.TabStop = true;
-            this.keywordSearchRadioButton.Text = "Keyword Search";
-            this.keywordSearchRadioButton.UseVisualStyleBackColor = true;
-            this.keywordSearchRadioButton.CheckedChanged += new System.EventHandler(this.keywordSearchRadioButton_CheckedChanged);
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Location = new System.Drawing.Point(3, 3);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(242, 20);
-            this.searchTextBox.TabIndex = 0;
-            this.searchTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyUp);
-            // 
             // yifySplitContainer
             // 
             this.yifySplitContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -496,6 +428,16 @@
             this.yifySplitContainer.SplitterDistance = 231;
             this.yifySplitContainer.TabIndex = 1;
             // 
+            // resultListBox
+            // 
+            this.resultListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resultListBox.FormattingEnabled = true;
+            this.resultListBox.Location = new System.Drawing.Point(0, 0);
+            this.resultListBox.Name = "resultListBox";
+            this.resultListBox.Size = new System.Drawing.Size(229, 437);
+            this.resultListBox.TabIndex = 0;
+            this.resultListBox.SelectedValueChanged += new System.EventHandler(this.resultListBox_SelectedValueChanged);
+            // 
             // detailsPanel
             // 
             this.detailsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -508,6 +450,21 @@
             this.detailsPanel.Name = "detailsPanel";
             this.detailsPanel.Size = new System.Drawing.Size(740, 437);
             this.detailsPanel.TabIndex = 0;
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.AcceptsTab = true;
+            this.descriptionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.descriptionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.descriptionTextBox.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionTextBox.Location = new System.Drawing.Point(3, 344);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.ReadOnly = true;
+            this.descriptionTextBox.Size = new System.Drawing.Size(733, 90);
+            this.descriptionTextBox.TabIndex = 1;
+            this.descriptionTextBox.Text = "";
             // 
             // tableLayoutPanel1
             // 
@@ -523,6 +480,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(740, 338);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // searchImageBox
+            // 
+            this.searchImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.searchImageBox.Location = new System.Drawing.Point(3, 3);
+            this.searchImageBox.Name = "searchImageBox";
+            this.searchImageBox.Size = new System.Drawing.Size(487, 332);
+            this.searchImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.searchImageBox.TabIndex = 1;
+            this.searchImageBox.TabStop = false;
             // 
             // groupBox1
             // 
@@ -549,79 +516,69 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movie Details";
             // 
-            // resolutionLabel
+            // downloadButton
             // 
-            this.resolutionLabel.AutoSize = true;
-            this.resolutionLabel.Location = new System.Drawing.Point(9, 51);
-            this.resolutionLabel.Name = "resolutionLabel";
-            this.resolutionLabel.Size = new System.Drawing.Size(83, 13);
-            this.resolutionLabel.TabIndex = 0;
-            this.resolutionLabel.Text = "Resolution: N/A";
+            this.downloadButton.Location = new System.Drawing.Point(83, 285);
+            this.downloadButton.Name = "downloadButton";
+            this.downloadButton.Size = new System.Drawing.Size(75, 23);
+            this.downloadButton.TabIndex = 15;
+            this.downloadButton.Text = "Download";
+            this.downloadButton.UseVisualStyleBackColor = true;
+            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
             // 
-            // qualityLabel
+            // peersLabel
             // 
-            this.qualityLabel.AutoSize = true;
-            this.qualityLabel.Location = new System.Drawing.Point(9, 64);
-            this.qualityLabel.Name = "qualityLabel";
-            this.qualityLabel.Size = new System.Drawing.Size(65, 13);
-            this.qualityLabel.TabIndex = 1;
-            this.qualityLabel.Text = "Quality: N/A";
+            this.peersLabel.AutoSize = true;
+            this.peersLabel.Location = new System.Drawing.Point(10, 207);
+            this.peersLabel.Name = "peersLabel";
+            this.peersLabel.Size = new System.Drawing.Size(63, 13);
+            this.peersLabel.TabIndex = 14;
+            this.peersLabel.Text = "Peers:  N/A";
             // 
-            // languageLabel
+            // seedersLabel
             // 
-            this.languageLabel.AutoSize = true;
-            this.languageLabel.Location = new System.Drawing.Point(9, 38);
-            this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(81, 13);
-            this.languageLabel.TabIndex = 2;
-            this.languageLabel.Text = "Language: N/A";
+            this.seedersLabel.AutoSize = true;
+            this.seedersLabel.Location = new System.Drawing.Point(10, 194);
+            this.seedersLabel.Name = "seedersLabel";
+            this.seedersLabel.Size = new System.Drawing.Size(75, 13);
+            this.seedersLabel.TabIndex = 13;
+            this.seedersLabel.Text = "Seeders:  N/A";
             // 
-            // movieTitleLabel
+            // timesDownloadedLabel
             // 
-            this.movieTitleLabel.AutoSize = true;
-            this.movieTitleLabel.Location = new System.Drawing.Point(9, 25);
-            this.movieTitleLabel.Name = "movieTitleLabel";
-            this.movieTitleLabel.Size = new System.Drawing.Size(53, 13);
-            this.movieTitleLabel.TabIndex = 3;
-            this.movieTitleLabel.Text = "Title: N/A";
+            this.timesDownloadedLabel.AutoSize = true;
+            this.timesDownloadedLabel.Location = new System.Drawing.Point(9, 181);
+            this.timesDownloadedLabel.Name = "timesDownloadedLabel";
+            this.timesDownloadedLabel.Size = new System.Drawing.Size(127, 13);
+            this.timesDownloadedLabel.TabIndex = 12;
+            this.timesDownloadedLabel.Text = "Times Downloaded:  N/A";
             // 
-            // dateAddedLabel
+            // genreLabel
             // 
-            this.dateAddedLabel.AutoSize = true;
-            this.dateAddedLabel.Location = new System.Drawing.Point(9, 77);
-            this.dateAddedLabel.Name = "dateAddedLabel";
-            this.dateAddedLabel.Size = new System.Drawing.Size(90, 13);
-            this.dateAddedLabel.TabIndex = 4;
-            this.dateAddedLabel.Text = "Date Added: N/A";
+            this.genreLabel.AutoSize = true;
+            this.genreLabel.Location = new System.Drawing.Point(10, 168);
+            this.genreLabel.Name = "genreLabel";
+            this.genreLabel.Size = new System.Drawing.Size(70, 13);
+            this.genreLabel.TabIndex = 11;
+            this.genreLabel.Text = "Genres:  N/A";
             // 
-            // subtitlesLabel
+            // fileSizeLabel
             // 
-            this.subtitlesLabel.AutoSize = true;
-            this.subtitlesLabel.Location = new System.Drawing.Point(9, 90);
-            this.subtitlesLabel.Name = "subtitlesLabel";
-            this.subtitlesLabel.Size = new System.Drawing.Size(73, 13);
-            this.subtitlesLabel.TabIndex = 5;
-            this.subtitlesLabel.Text = "Subtitles: N/A";
+            this.fileSizeLabel.AutoSize = true;
+            this.fileSizeLabel.Location = new System.Drawing.Point(9, 155);
+            this.fileSizeLabel.Name = "fileSizeLabel";
+            this.fileSizeLabel.Size = new System.Drawing.Size(72, 13);
+            this.fileSizeLabel.TabIndex = 10;
+            this.fileSizeLabel.Text = "File Size: N/A";
             // 
-            // framerateLabel
+            // movieRuntimeLabel
             // 
-            this.framerateLabel.AutoSize = true;
-            this.framerateLabel.Location = new System.Drawing.Point(9, 103);
-            this.framerateLabel.Name = "framerateLabel";
-            this.framerateLabel.Size = new System.Drawing.Size(80, 13);
-            this.framerateLabel.TabIndex = 6;
-            this.framerateLabel.Text = "Framerate: N/A";
-            // 
-            // youtubeLinkLabel
-            // 
-            this.youtubeLinkLabel.AutoSize = true;
-            this.youtubeLinkLabel.Location = new System.Drawing.Point(9, 116);
-            this.youtubeLinkLabel.Name = "youtubeLinkLabel";
-            this.youtubeLinkLabel.Size = new System.Drawing.Size(96, 13);
-            this.youtubeLinkLabel.TabIndex = 7;
-            this.youtubeLinkLabel.TabStop = true;
-            this.youtubeLinkLabel.Text = "Youtube Link: N/A";
-            this.youtubeLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkClicked);
+            this.movieRuntimeLabel.AutoSize = true;
+            this.movieRuntimeLabel.Location = new System.Drawing.Point(9, 142);
+            this.movieRuntimeLabel.Name = "movieRuntimeLabel";
+            this.movieRuntimeLabel.Size = new System.Drawing.Size(104, 13);
+            this.movieRuntimeLabel.TabIndex = 9;
+            this.movieRuntimeLabel.Text = "Movie Runtime: N/A";
             // 
             // imdbLinkLabel
             // 
@@ -634,104 +591,168 @@
             this.imdbLinkLabel.Text = "IMDB Link: N/A";
             this.imdbLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkClicked);
             // 
-            // movieRuntimeLabel
+            // youtubeLinkLabel
             // 
-            this.movieRuntimeLabel.AutoSize = true;
-            this.movieRuntimeLabel.Location = new System.Drawing.Point(9, 142);
-            this.movieRuntimeLabel.Name = "movieRuntimeLabel";
-            this.movieRuntimeLabel.Size = new System.Drawing.Size(104, 13);
-            this.movieRuntimeLabel.TabIndex = 9;
-            this.movieRuntimeLabel.Text = "Movie Runtime: N/A";
+            this.youtubeLinkLabel.AutoSize = true;
+            this.youtubeLinkLabel.Location = new System.Drawing.Point(9, 116);
+            this.youtubeLinkLabel.Name = "youtubeLinkLabel";
+            this.youtubeLinkLabel.Size = new System.Drawing.Size(96, 13);
+            this.youtubeLinkLabel.TabIndex = 7;
+            this.youtubeLinkLabel.TabStop = true;
+            this.youtubeLinkLabel.Text = "Youtube Link: N/A";
+            this.youtubeLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkClicked);
             // 
-            // fileSizeLabel
+            // framerateLabel
             // 
-            this.fileSizeLabel.AutoSize = true;
-            this.fileSizeLabel.Location = new System.Drawing.Point(9, 155);
-            this.fileSizeLabel.Name = "fileSizeLabel";
-            this.fileSizeLabel.Size = new System.Drawing.Size(72, 13);
-            this.fileSizeLabel.TabIndex = 10;
-            this.fileSizeLabel.Text = "File Size: N/A";
+            this.framerateLabel.AutoSize = true;
+            this.framerateLabel.Location = new System.Drawing.Point(9, 103);
+            this.framerateLabel.Name = "framerateLabel";
+            this.framerateLabel.Size = new System.Drawing.Size(80, 13);
+            this.framerateLabel.TabIndex = 6;
+            this.framerateLabel.Text = "Framerate: N/A";
             // 
-            // genreLabel
+            // subtitlesLabel
             // 
-            this.genreLabel.AutoSize = true;
-            this.genreLabel.Location = new System.Drawing.Point(10, 168);
-            this.genreLabel.Name = "genreLabel";
-            this.genreLabel.Size = new System.Drawing.Size(70, 13);
-            this.genreLabel.TabIndex = 11;
-            this.genreLabel.Text = "Genres:  N/A";
+            this.subtitlesLabel.AutoSize = true;
+            this.subtitlesLabel.Location = new System.Drawing.Point(9, 90);
+            this.subtitlesLabel.Name = "subtitlesLabel";
+            this.subtitlesLabel.Size = new System.Drawing.Size(73, 13);
+            this.subtitlesLabel.TabIndex = 5;
+            this.subtitlesLabel.Text = "Subtitles: N/A";
             // 
-            // timesDownloadedLabel
+            // dateAddedLabel
             // 
-            this.timesDownloadedLabel.AutoSize = true;
-            this.timesDownloadedLabel.Location = new System.Drawing.Point(9, 181);
-            this.timesDownloadedLabel.Name = "timesDownloadedLabel";
-            this.timesDownloadedLabel.Size = new System.Drawing.Size(127, 13);
-            this.timesDownloadedLabel.TabIndex = 12;
-            this.timesDownloadedLabel.Text = "Times Downloaded:  N/A";
+            this.dateAddedLabel.AutoSize = true;
+            this.dateAddedLabel.Location = new System.Drawing.Point(9, 77);
+            this.dateAddedLabel.Name = "dateAddedLabel";
+            this.dateAddedLabel.Size = new System.Drawing.Size(90, 13);
+            this.dateAddedLabel.TabIndex = 4;
+            this.dateAddedLabel.Text = "Date Added: N/A";
             // 
-            // seedersLabel
+            // movieTitleLabel
             // 
-            this.seedersLabel.AutoSize = true;
-            this.seedersLabel.Location = new System.Drawing.Point(10, 194);
-            this.seedersLabel.Name = "seedersLabel";
-            this.seedersLabel.Size = new System.Drawing.Size(75, 13);
-            this.seedersLabel.TabIndex = 13;
-            this.seedersLabel.Text = "Seeders:  N/A";
+            this.movieTitleLabel.AutoSize = true;
+            this.movieTitleLabel.Location = new System.Drawing.Point(9, 25);
+            this.movieTitleLabel.Name = "movieTitleLabel";
+            this.movieTitleLabel.Size = new System.Drawing.Size(53, 13);
+            this.movieTitleLabel.TabIndex = 3;
+            this.movieTitleLabel.Text = "Title: N/A";
             // 
-            // peersLabel
+            // languageLabel
             // 
-            this.peersLabel.AutoSize = true;
-            this.peersLabel.Location = new System.Drawing.Point(10, 207);
-            this.peersLabel.Name = "peersLabel";
-            this.peersLabel.Size = new System.Drawing.Size(63, 13);
-            this.peersLabel.TabIndex = 14;
-            this.peersLabel.Text = "Peers:  N/A";
+            this.languageLabel.AutoSize = true;
+            this.languageLabel.Location = new System.Drawing.Point(9, 38);
+            this.languageLabel.Name = "languageLabel";
+            this.languageLabel.Size = new System.Drawing.Size(81, 13);
+            this.languageLabel.TabIndex = 2;
+            this.languageLabel.Text = "Language: N/A";
             // 
-            // downloadButton
+            // qualityLabel
             // 
-            this.downloadButton.Location = new System.Drawing.Point(83, 285);
-            this.downloadButton.Name = "downloadButton";
-            this.downloadButton.Size = new System.Drawing.Size(75, 23);
-            this.downloadButton.TabIndex = 15;
-            this.downloadButton.Text = "Download";
-            this.downloadButton.UseVisualStyleBackColor = true;
-            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
+            this.qualityLabel.AutoSize = true;
+            this.qualityLabel.Location = new System.Drawing.Point(9, 64);
+            this.qualityLabel.Name = "qualityLabel";
+            this.qualityLabel.Size = new System.Drawing.Size(65, 13);
+            this.qualityLabel.TabIndex = 1;
+            this.qualityLabel.Text = "Quality: N/A";
             // 
-            // searchImageBox
+            // resolutionLabel
             // 
-            this.searchImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchImageBox.Location = new System.Drawing.Point(3, 3);
-            this.searchImageBox.Name = "searchImageBox";
-            this.searchImageBox.Size = new System.Drawing.Size(487, 332);
-            this.searchImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.searchImageBox.TabIndex = 1;
-            this.searchImageBox.TabStop = false;
+            this.resolutionLabel.AutoSize = true;
+            this.resolutionLabel.Location = new System.Drawing.Point(9, 51);
+            this.resolutionLabel.Name = "resolutionLabel";
+            this.resolutionLabel.Size = new System.Drawing.Size(83, 13);
+            this.resolutionLabel.TabIndex = 0;
+            this.resolutionLabel.Text = "Resolution: N/A";
             // 
-            // descriptionTextBox
+            // flowLayoutPanel2
             // 
-            this.descriptionTextBox.AcceptsTab = true;
-            this.descriptionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.descriptionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.descriptionTextBox.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionTextBox.Location = new System.Drawing.Point(3, 344);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.ReadOnly = true;
-            this.descriptionTextBox.Size = new System.Drawing.Size(733, 90);
-            this.descriptionTextBox.TabIndex = 1;
-            this.descriptionTextBox.Text = "";
+            this.flowLayoutPanel2.Controls.Add(this.searchTextBox);
+            this.flowLayoutPanel2.Controls.Add(this.keywordSearchRadioButton);
+            this.flowLayoutPanel2.Controls.Add(this.genreSearchRadioButton);
+            this.flowLayoutPanel2.Controls.Add(this.searchButton);
+            this.flowLayoutPanel2.Controls.Add(this.clearResultsButton);
+            this.flowLayoutPanel2.Controls.Add(this.latestMoviesButton);
+            this.flowLayoutPanel2.Controls.Add(this.upcomingMoviesButton);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(977, 27);
+            this.flowLayoutPanel2.TabIndex = 0;
             // 
-            // resultListBox
+            // searchTextBox
             // 
-            this.resultListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.resultListBox.FormattingEnabled = true;
-            this.resultListBox.Location = new System.Drawing.Point(0, 0);
-            this.resultListBox.Name = "resultListBox";
-            this.resultListBox.Size = new System.Drawing.Size(229, 437);
-            this.resultListBox.TabIndex = 0;
-            this.resultListBox.SelectedValueChanged += new System.EventHandler(this.resultListBox_SelectedValueChanged);
+            this.searchTextBox.Location = new System.Drawing.Point(3, 3);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(242, 20);
+            this.searchTextBox.TabIndex = 0;
+            this.searchTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyUp);
+            // 
+            // keywordSearchRadioButton
+            // 
+            this.keywordSearchRadioButton.AutoSize = true;
+            this.keywordSearchRadioButton.Checked = true;
+            this.keywordSearchRadioButton.Location = new System.Drawing.Point(251, 3);
+            this.keywordSearchRadioButton.Name = "keywordSearchRadioButton";
+            this.keywordSearchRadioButton.Size = new System.Drawing.Size(103, 17);
+            this.keywordSearchRadioButton.TabIndex = 5;
+            this.keywordSearchRadioButton.TabStop = true;
+            this.keywordSearchRadioButton.Text = "Keyword Search";
+            this.keywordSearchRadioButton.UseVisualStyleBackColor = true;
+            this.keywordSearchRadioButton.CheckedChanged += new System.EventHandler(this.keywordSearchRadioButton_CheckedChanged);
+            // 
+            // genreSearchRadioButton
+            // 
+            this.genreSearchRadioButton.AutoSize = true;
+            this.genreSearchRadioButton.Location = new System.Drawing.Point(360, 3);
+            this.genreSearchRadioButton.Name = "genreSearchRadioButton";
+            this.genreSearchRadioButton.Size = new System.Drawing.Size(91, 17);
+            this.genreSearchRadioButton.TabIndex = 6;
+            this.genreSearchRadioButton.Text = "Genre Search";
+            this.genreSearchRadioButton.UseVisualStyleBackColor = true;
+            this.genreSearchRadioButton.CheckedChanged += new System.EventHandler(this.genreSearchRadioButton_CheckedChanged);
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(457, 3);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 1;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // clearResultsButton
+            // 
+            this.clearResultsButton.AutoSize = true;
+            this.clearResultsButton.Location = new System.Drawing.Point(538, 3);
+            this.clearResultsButton.Name = "clearResultsButton";
+            this.clearResultsButton.Size = new System.Drawing.Size(79, 23);
+            this.clearResultsButton.TabIndex = 4;
+            this.clearResultsButton.Text = "Clear Results";
+            this.clearResultsButton.UseVisualStyleBackColor = true;
+            this.clearResultsButton.Click += new System.EventHandler(this.clearResultsButton_Click);
+            // 
+            // latestMoviesButton
+            // 
+            this.latestMoviesButton.AutoSize = true;
+            this.latestMoviesButton.Location = new System.Drawing.Point(623, 3);
+            this.latestMoviesButton.Name = "latestMoviesButton";
+            this.latestMoviesButton.Size = new System.Drawing.Size(102, 23);
+            this.latestMoviesButton.TabIndex = 8;
+            this.latestMoviesButton.Text = "Latest Movies";
+            this.latestMoviesButton.UseVisualStyleBackColor = true;
+            this.latestMoviesButton.Click += new System.EventHandler(this.latestMoviesButton_Click);
+            // 
+            // upcomingMoviesButton
+            // 
+            this.upcomingMoviesButton.AutoSize = true;
+            this.upcomingMoviesButton.Location = new System.Drawing.Point(731, 3);
+            this.upcomingMoviesButton.Name = "upcomingMoviesButton";
+            this.upcomingMoviesButton.Size = new System.Drawing.Size(102, 23);
+            this.upcomingMoviesButton.TabIndex = 7;
+            this.upcomingMoviesButton.Text = "Upcoming Movies";
+            this.upcomingMoviesButton.UseVisualStyleBackColor = true;
             // 
             // jrCinemaTabControl
             // 
@@ -746,27 +767,6 @@
             this.jrCinemaTabControl.SelectedIndex = 0;
             this.jrCinemaTabControl.Size = new System.Drawing.Size(991, 498);
             this.jrCinemaTabControl.TabIndex = 0;
-            // 
-            // upcomingMoviesButton
-            // 
-            this.upcomingMoviesButton.AutoSize = true;
-            this.upcomingMoviesButton.Location = new System.Drawing.Point(731, 3);
-            this.upcomingMoviesButton.Name = "upcomingMoviesButton";
-            this.upcomingMoviesButton.Size = new System.Drawing.Size(102, 23);
-            this.upcomingMoviesButton.TabIndex = 7;
-            this.upcomingMoviesButton.Text = "Upcoming Movies";
-            this.upcomingMoviesButton.UseVisualStyleBackColor = true;
-            // 
-            // latestMoviesButton
-            // 
-            this.latestMoviesButton.AutoSize = true;
-            this.latestMoviesButton.Location = new System.Drawing.Point(623, 3);
-            this.latestMoviesButton.Name = "latestMoviesButton";
-            this.latestMoviesButton.Size = new System.Drawing.Size(102, 23);
-            this.latestMoviesButton.TabIndex = 8;
-            this.latestMoviesButton.Text = "Latest Movies";
-            this.latestMoviesButton.UseVisualStyleBackColor = true;
-            this.latestMoviesButton.Click += new System.EventHandler(this.latestMoviesButton_Click);
             // 
             // JRCinemaForm
             // 
@@ -783,19 +783,17 @@
             this.panel1.ResumeLayout(false);
             this.settingsTab.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.externalSettingsGroupBox.ResumeLayout(false);
-            this.externalSettingsGroupBox.PerformLayout();
-            this.internalSettingsGroupBox.ResumeLayout(false);
-            this.internalSettingsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.incomingPortNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.globalMaxConnNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.perTorrentMaxNumeric)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.internalSettingsGroupBox.ResumeLayout(false);
+            this.internalSettingsGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.perTorrentMaxNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.globalMaxConnNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomingPortNumeric)).EndInit();
+            this.externalSettingsGroupBox.ResumeLayout(false);
+            this.externalSettingsGroupBox.PerformLayout();
             this.downloadTab.ResumeLayout(false);
             this.searchTab.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.yifySplitContainer.Panel1.ResumeLayout(false);
             this.yifySplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.yifySplitContainer)).EndInit();
@@ -803,9 +801,11 @@
             this.detailsPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchImageBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchImageBox)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.jrCinemaTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
