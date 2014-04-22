@@ -13,4 +13,4 @@ BUILD SOURCE AT YOUR OWN RISK
 
 Alot to fix but majority is functional and IT DOES work
 
-This application does use P2P protocol and is powered through MonoTorrent. For communicating to YIFY it uses Newtonsoft JSON library
+This application does use P2P protocol and is powered through MonoTorrent. For communicating to YIFY it uses Newtonsoft JSON library. If its slow to download then give it a few minutes it'll warm up. It just needs to connect to the swarm and all the seeders
