@@ -747,6 +747,7 @@
             // upcomingMoviesButton
             // 
             this.upcomingMoviesButton.AutoSize = true;
+            this.upcomingMoviesButton.Enabled = false;
             this.upcomingMoviesButton.Location = new System.Drawing.Point(731, 3);
             this.upcomingMoviesButton.Name = "upcomingMoviesButton";
             this.upcomingMoviesButton.Size = new System.Drawing.Size(102, 23);
