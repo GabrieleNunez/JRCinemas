@@ -12,22 +12,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://jrcinemas.codeplex.com/releases/clickonce/</InstallUrl>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <MapFileExtensions>false</MapFileExtensions>
     <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.0.3</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -66,7 +65,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>JRCinemas.Program</StartupObject>
@@ -74,15 +73,13 @@
   <ItemGroup>
     <Reference Include="MonoTorrent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dist\MonoTorrent.dll</HintPath>
+      <HintPath>..\packages\MonoTorrent.1.0.0\lib\MonoTorrent.dll</HintPath>
     </Reference>
-    <Reference Include="MonoTorrent.Dht, Version=0.70.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dist\MonoTorrent.Dht.dll</HintPath>
+    <Reference Include="MonoTorrent.Dht">
+      <HintPath>..\packages\MonoTorrent.1.0.0\lib\MonoTorrent.Dht.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dist\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -103,16 +100,17 @@
     <Compile Include="JRCinemaForm.Designer.cs">
       <DependentUpon>JRCinemaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MovieCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\YIFYListedMovie.cs" />
+    <Compile Include="Providers\YIFYListedMovies.cs" />
+    <Compile Include="Providers\YIFYMultiMovie.cs" />
+    <Compile Include="Providers\YIFYUpcomingMovie.cs" />
+    <Compile Include="Providers\YIFYMovie.cs" />
+    <Compile Include="Providers\NoListedMovieException.cs" />
+    <Compile Include="Providers\NoUpcomingMovieException.cs" />
+    <Compile Include="Providers\UnableToFindMovieException.cs" />
     <Compile Include="Providers\YIFYProvider.cs" />
-    <Compile Include="RenderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RenderForm.Designer.cs">
-      <DependentUpon>RenderForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="RSSTalk\RSSFeed.cs" />
     <Compile Include="TorrentClient.cs" />
     <EmbeddedResource Include="JRCinemaForm.resx">
@@ -128,10 +126,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RenderForm.resx">
-      <DependentUpon>RenderForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MonoTorrent;
-using MonoTorrent.Dht;
 using MonoTorrent.Client;
 using System.Net;
 using System.Windows.Forms;
 using System.IO;
 using MonoTorrent.Common;
-using MonoTorrent.Dht.Listeners;
 using MonoTorrent.BEncoding;
+using MonoTorrent.Dht;
+using MonoTorrent.Dht.Listeners;
 
 namespace JRCinemas
 {
@@ -20,18 +20,19 @@ namespace JRCinemas
     /// </summary>
     public sealed class TorrentClient
     {
-        
+
         private ClientEngine torrentEngine = null;
         private EngineSettings engineSettings = null;
         private TorrentSettings torrentSettings = null;
         private DhtEngine dhtEngine;
         private DhtListener dhtListener;
         private BEncodedDictionary fastResume;
-        
+
         private string saveDirectory;
         private string metaSaveDirectory;
         private string dhtNodeFile;
         private string resumeFile;
+
 
         /// <summary>
         /// Gets or Sets a Directory where we are saving all torrents and downloaded data
@@ -59,9 +60,9 @@ namespace JRCinemas
 
 
         public int Port { get; set; }
-      /// <summary>
-      /// Initializes the Torrent client  and its basic core members
-      /// </summary>
+        /// <summary>
+        /// Initializes the Torrent client  and its basic core members
+        /// </summary>
         public TorrentClient()
         {
             saveDirectory = GlobalSettings.DownloadDirectory;
@@ -84,15 +85,9 @@ namespace JRCinemas
             torrentSettings.EnablePeerExchange = GlobalSettings.UsePeerExchange;
             torrentSettings.UseDht = GlobalSettings.UseDht;
             torrentSettings.MaxConnections = GlobalSettings.TorrentMaxConnections;
+
         }
-        /// <summary>
-        /// Destructor for TorrentClient
-        /// Make sure we shutdown and save data if we're destroying the torrent client
-        /// </summary>
-        ~TorrentClient()
-        {
-            Shutdown();
-        }
+
         /// <summary>
         /// Checks if the directory exist and if not creates one
         /// Useful for setting up required directories
@@ -119,15 +114,20 @@ namespace JRCinemas
             {
                 nodes = File.ReadAllBytes(dhtNodeFile);
             }
-            catch { }
+            catch
+            {
+                //keep it null, what we use it for will instead create its own and then save them
+                nodes = null;
+            }
 
+            //construct our listener for our dht engine and then create the dht engine
+            //register it and then start it based on the nodes we attempted to load
             //construct our listener for our dht engine and then create the dht engine
             //register it and then start it based on the nodes we attempted to load
             dhtListener = new DhtListener(new IPEndPoint(IPAddress.Any, Port));
             dhtEngine = new DhtEngine(dhtListener);
             torrentEngine.RegisterDht(dhtEngine);
             torrentEngine.DhtEngine.Start(nodes);
-
             //same as with the dht nodes try to load but if any errors then continue 
             try
             {
@@ -137,7 +137,7 @@ namespace JRCinemas
             {
                 fastResume = new BEncodedDictionary();
             }
-            
+
             //This is where we go into our save directory and look for any torrents
             //user may of left off on a download and we can possibly resume it
             //also a backend way to force a download from another  provider source to download
@@ -166,7 +166,7 @@ namespace JRCinemas
         /// </summary>
         public void Shutdown()
         {
-            dhtListener.Stop();
+
             torrentEngine.DhtEngine.Stop();
             fastResume.Clear();
             for (int i = 0; i < Torrents.Count; i++)
@@ -184,19 +184,19 @@ namespace JRCinemas
         /// </summary>
         /// <param name="magnet">magnent url to use</param>
         /// <returns>The TorrentManager associated with the MagnentUrl</returns>
-        [Obsolete("Magnent torrents seem to be bugged in MonoTorrent do not use. Use Regular AddTorrent instead",true)]
+        [Obsolete("Magnent torrents seem to be bugged in MonoTorrent do not use. Use Regular AddTorrent instead", true)]
         public TorrentManager AddMagnetUrl(string magnet)
         {
             MagnetLink link = new MagnetLink(magnet);
-            
+
             string metaStorage = metaSaveDirectory + "\\";
             Random random = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < 20; i++)
                 metaStorage += random.Next(0, 9).ToString();
             metaStorage += ".meta";
             CreateDir(metaStorage);
-            
-            TorrentManager manager = new TorrentManager(link, saveDirectory, torrentSettings, metaStorage); 
+
+            TorrentManager manager = new TorrentManager(link, saveDirectory, torrentSettings, metaStorage);
             torrentEngine.Register(manager);
             return manager;
         }
@@ -206,12 +206,12 @@ namespace JRCinemas
         /// <param name="path">a local or URI style path</param>
         /// <param name="isUrl">if path is a url then will download file first otherwise will load locally</param>
         /// <returns>The TorrentManager associated with the Torrent file</returns>
-        public TorrentManager AddTorrent(string path,bool isUrl)
+        public TorrentManager AddTorrent(string path, bool isUrl)
         {
             Torrent torrent;
             if (isUrl)
             {
-                torrent = Torrent.Load(new Uri(path),saveDirectory + "\\" + Path.GetFileName(path) );
+                torrent = Torrent.Load(new Uri(path), saveDirectory + "\\" + Path.GetFileName(path));
                 TorrentManager manager = new TorrentManager(torrent, saveDirectory, torrentSettings);
                 torrentEngine.Register(manager);
                 return manager;
@@ -222,7 +222,7 @@ namespace JRCinemas
                 TorrentManager manager = new TorrentManager(torrent, saveDirectory, torrentSettings);
                 torrentEngine.Register(manager);
                 return manager;
-            }   
+            }
         }
         /// <summary>
         /// Removes and unregister the torrent from the engine

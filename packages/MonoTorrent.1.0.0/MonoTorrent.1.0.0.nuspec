@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MonoTorrent</id>
+    <version>1.0.0</version>
+    <authors>P13</authors>
+    <owners>P13</owners>
+    <projectUrl>https://github.com/mono/monotorrent</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Latest Github build of MonoTorrent as well as MonoTorrent.Dht</description>
+    <summary>MonoTorrent as well as MonoTorrent.Dht</summary>
+    <releaseNotes />
+    <tags>mono torrent monotorrent dht</tags>
+  </metadata>
+</package>

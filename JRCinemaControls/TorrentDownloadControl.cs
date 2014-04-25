@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MonoTorrent;
-using MonoTorrent.Common;
 using MonoTorrent.Client;
+using MonoTorrent.Common;
 using System.IO;
 using System.Diagnostics;
 namespace JRCinemaControls
@@ -46,7 +46,6 @@ namespace JRCinemaControls
                 {
                     downloadItemLabel.Text = torrent.Torrent.Name;
                     torrent.TorrentStateChanged += torrent_TorrentStateChanged;
-
                 }
                 else
                 {

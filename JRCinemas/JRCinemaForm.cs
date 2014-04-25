@@ -21,15 +21,12 @@ namespace JRCinemas
         private TorrentClient torrentClient;
         private bool isMagnet = true;
         private string torrentPath = "";
+        
         public JRCinemaForm()
         {
             InitializeComponent();
         }
-        ~JRCinemaForm()
-        {
-          
-        }
-      
+     
         protected override void OnLoad(EventArgs e)
         {
             this.Cursor = Cursors.WaitCursor;
@@ -106,7 +103,7 @@ namespace JRCinemas
             {
                 try
                 {
-                    YIFYProvider.ListedMovies movies = null;
+                    YIFYListedMovies movies = null;
                     if (keywordSearch)
                         movies = YIFYProvider.GetMovieList(searchTextBox.Text);
                     else
@@ -116,7 +113,7 @@ namespace JRCinemas
                     {
                         if (movies.MovieList.Length > 0)
                         {
-                            foreach (YIFYProvider.ListedMovie movie in movies.MovieList)
+                            foreach (YIFYListedMovie movie in movies.MovieList)
                                 resultListBox.Items.Add(movie);
                         }
                         else
@@ -133,7 +130,7 @@ namespace JRCinemas
         private void SeachUpcoming()
         {
             this.Cursor = Cursors.WaitCursor;
-            YIFYProvider.UpcomingMovie[] movies = YIFYProvider.GetUpcomingMovies();
+            YIFYUpcomingMovie[] movies = YIFYProvider.GetUpcomingMovies();
             //TODO need to finish method SearchUpcoming
             //only gets the movies but does nothing with them
             this.Cursor = Cursors.Arrow;
@@ -158,10 +155,10 @@ namespace JRCinemas
                     imdbLinkLabel.Links.RemoveAt(0);
                     imdbLinkLabel.Links.Clear();
                 }
-                if (((YIFYProvider.ListedMovie)resultListBox.SelectedItem) != null)
+                if (((YIFYListedMovie)resultListBox.SelectedItem) != null)
                 {
-                    int movieId = ((YIFYProvider.ListedMovie)resultListBox.SelectedItem).MovieID;
-                    YIFYProvider.Movie movie = YIFYProvider.GetMovieDetail(movieId.ToString());
+                    int movieId = ((YIFYListedMovie)resultListBox.SelectedItem).MovieID;
+                    YIFYMovie movie = YIFYProvider.GetMovieDetail(movieId.ToString());
                     if (movie != null)
                     {
                         searchImageBox.LoadAsync(movie.LargeCover);
