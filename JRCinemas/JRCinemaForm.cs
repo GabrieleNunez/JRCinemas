@@ -304,7 +304,7 @@ namespace JRCinemas
 
         private void latestMoviesButton_Click(object sender, EventArgs e)
         {
-
+            //TODO actually implement this one
         }
     }
 }

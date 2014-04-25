@@ -23,7 +23,6 @@ namespace JRCinemas
         private static string externalTorrentArgs;
         private static string downloadDirectory;
 
-
         public static int IncomingPort
         {
             get { return incomingPort; }
@@ -74,15 +73,15 @@ namespace JRCinemas
             get { return downloadDirectory; }
             set { downloadDirectory = value; }
         }
-        
+
         private const string FILENAME_DHT = "data.dht";
         private const string FILENAME_RESUME = "data.resume";
         private const string FILENAME_GLOBAL_SETTINGS = "global.set";
         private const string FILENAME_EXT_SETTINGS = ".set";
         private const string DIRECTORY_DOWNLOADS = "Downloads";
         private const string DIRECTORY_METADATA = "Metadata";
-        
-        
+
+
         private const string FORMAT_SETTING_DATA = "{0}\t{1}\r\n";
         private const string FORMAT_SETTING_CODEBASE = "CODEBASE";
         private const string FORMAT_SETTING_INCPORT = "INCOMING_PORT";
@@ -95,12 +94,12 @@ namespace JRCinemas
         private const string FORMAT_SETTING_EXTTORRENTPATH = "EXTERNAL_TORRENTCLIENT_PATH";
         private const string FORMAT_SETTING_EXTORRENTARGS = "EXTERNAL_TORRENTCLIENT_ARGS";
         private const string FORMAT_SETTING_DOWNLOADDIR = "DOWNLOAD_DIRECTORY";
-        
-        
+
+
         public const string CODEBASE = "UTERO";
         public const string TORRENT_FILE_SWAP = "@[TORRENTFILE]";
-        
-         
+
+
         public const int DEFAULT_INCOMING_PORT = 45732;
         public const bool DEFAULT_USE_INTERNAL = true;
         public const bool DEFAULT_USE_ENCRYPTION = false;
@@ -110,14 +109,14 @@ namespace JRCinemas
         public const int DEFAULT_TORRENT_CONNECTIONS = 100;
         public const string DEFAULT_EXTERNALTORRENT = "";
         public const string DEFAULT_EXTERNALTORRENT_ARGS = TORRENT_FILE_SWAP;
-       
-       
+
+
         public readonly static string DHT_FILE = Path.Combine(Application.StartupPath, FILENAME_DHT);
-        public readonly static string RESUME_FILE = Path.Combine(Application.StartupPath,FILENAME_RESUME);
-        public readonly static string SETTINGS_FILE = Path.Combine(Application.StartupPath,FILENAME_GLOBAL_SETTINGS);
-        public readonly static string DEFAULT_DOWNLOAD_DIRECTORY = Path.Combine(Application.StartupPath,DIRECTORY_DOWNLOADS);
+        public readonly static string RESUME_FILE = Path.Combine(Application.StartupPath, FILENAME_RESUME);
+        public readonly static string SETTINGS_FILE = Path.Combine(Application.StartupPath, FILENAME_GLOBAL_SETTINGS);
+        public readonly static string DEFAULT_DOWNLOAD_DIRECTORY = Path.Combine(Application.StartupPath, DIRECTORY_DOWNLOADS);
         public readonly static string DEFAULT_METADATA_DIRECTORY = Path.Combine(Application.StartupPath, DIRECTORY_METADATA);
-        
+
 
         static GlobalSettings()
         {

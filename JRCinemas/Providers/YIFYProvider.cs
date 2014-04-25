@@ -49,17 +49,17 @@ namespace JRCinemas.Providers
         }
         private static string ParamUrl(string url, string[,] data)
         {
-            string result = url;
+            string result = "";
             bool firstMod = true;
             for (int i = 0; i < data.GetLength(0); i++)
             {
                 if (data[i, 1] != null && firstMod)
                 {
-                    result = result + "?" + Uri.EscapeDataString(data[i, 0]) + "=" + Uri.EscapeDataString(data[i, 1]);
+                    result = string.Format("{0}?{1}={2}", url, Uri.EscapeDataString(data[i, 0]), Uri.EscapeDataString(data[i, 1]));
                     firstMod = false;
                 }
                 else if (data[i, 1] != null)
-                    result = result + "&" + Uri.EscapeDataString(data[i, 0]) + "=" + Uri.EscapeDataString(data[i, 1]);
+                    result = string.Format("{0}&{1}={2}", result, Uri.EscapeDataString(data[i, 0]), Uri.EscapeDataString(data[i, 1]));
             }
             return result;
         }
