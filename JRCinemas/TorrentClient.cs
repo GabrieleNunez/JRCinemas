@@ -18,7 +18,7 @@ namespace JRCinemas
     /// TorrentClient class that will wrap the functionality of MonoTorrent framework into a easy to use class.
     /// Sealed for no inheritance should only be one of these running around for sake of simplicity. 
     /// </summary>
-    public sealed class TorrentClient
+    public sealed class TorrentClient : IDisposable
     {
 
         private ClientEngine torrentEngine = null;
@@ -261,6 +261,13 @@ namespace JRCinemas
         public void Stop(int index)
         {
             torrentEngine.Torrents[index].Stop();
+        }
+
+        public void Dispose()
+        {
+            Shutdown();
+            torrentEngine.Dispose();
+            dhtEngine.Dispose();
         }
     }
 }

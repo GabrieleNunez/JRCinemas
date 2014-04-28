@@ -19,7 +19,7 @@ namespace JRCinemaControls
     public partial class TorrentDownloadControl: UserControl
     {
         delegate void SimpleHandler();
-        public delegate void PlayRequestedHandler(string file);
+        public delegate void PlayRequestedHandler(object sender,EventArgs e);
         private TorrentManager torrent = null;
         private Timer timer;
         private SimpleHandler handler;
@@ -183,7 +183,7 @@ namespace JRCinemaControls
                 }
             }
             if (string.IsNullOrEmpty(fullPath) == false)
-                PlayRequested.Invoke(fullPath);
+                PlayRequested.Invoke(fullPath,null);
         }
         /// <summary>
         /// Convert bytes per second to short hand versions
@@ -275,7 +275,7 @@ namespace JRCinemaControls
                 }
             }
             if(string.IsNullOrEmpty(fullPath) == false)
-                PlayRequested.Invoke(fullPath);
+                PlayRequested.Invoke(fullPath,null);
         }
 
         

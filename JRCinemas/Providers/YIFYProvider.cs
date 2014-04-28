@@ -36,9 +36,7 @@ namespace JRCinemas.Providers
                     using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                     {
                         data = reader.ReadToEnd();
-                        reader.Close();
                     }
-                    response.Close();
                 }
                 return data;
             }
@@ -47,6 +45,12 @@ namespace JRCinemas.Providers
                 return null;
             }
         }
+        /// <summary>
+        /// Format our url based on supplied data
+        /// </summary>
+        /// <param name="url">Our base url</param>
+        /// <param name="data">Supplied arguments, [paramName,value]</param>
+        /// <returns>Modifed string</returns>
         private static string ParamUrl(string url, string[,] data)
         {
             string result = "";
@@ -63,7 +67,10 @@ namespace JRCinemas.Providers
             }
             return result;
         }
-
+        /// <summary>
+        /// Gets a list of of upcoming movies
+        /// </summary>
+        /// <returns></returns>
         public static YIFYUpcomingMovie[] GetUpcomingMovies()
         {
             YIFYUpcomingMovie[] upComingMovies = null;
@@ -80,12 +87,27 @@ namespace JRCinemas.Providers
             }
             return upComingMovies;
         }
-
+        /// <summary>
+        /// Gets a list of movies based on keywords
+        /// </summary>
+        /// <param name="keywords">The keywords to search for</param>
+        /// <returns></returns>
         public static YIFYListedMovies GetMovieList(string keywords)
         {
             return GetMovieList(null, null, null, null, keywords, null, null, null);
         }
-
+        /// <summary>
+        /// Gets a list of movies based on the given parameters
+        /// </summary>
+        /// <param name="limit"></param>
+        /// <param name="set"></param>
+        /// <param name="quality"></param>
+        /// <param name="rating"></param>
+        /// <param name="keywords"></param>
+        /// <param name="genre"></param>
+        /// <param name="sort"></param>
+        /// <param name="order"></param>
+        /// <returns></returns>
         public static YIFYListedMovies GetMovieList(string limit, string set, string quality, string rating, string keywords,
             string genre, string sort, string order)
         {
@@ -115,6 +137,11 @@ namespace JRCinemas.Providers
             }
             return movies;
         }
+        /// <summary>
+        /// Getst the inner details of a movie
+        /// </summary>
+        /// <param name="id">The id of the movie</param>
+        /// <returns></returns>
         public static YIFYMovie GetMovieDetail(string id)
         {
             YIFYMovie movie = null;

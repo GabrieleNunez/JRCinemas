@@ -61,10 +61,10 @@ namespace JRCinemas
             control.PlayRequested += PlayRequested;
             control.Start();
         }
-        private void PlayRequested(string file)
+        private void PlayRequested(object sender,EventArgs e)
         {
             Process process = new Process();
-            process.StartInfo.Arguments = Path.GetDirectoryName(file);
+            process.StartInfo.Arguments = Path.GetDirectoryName((string)sender);
             process.StartInfo.FileName = "explorer.exe";
             process.Start();
         }

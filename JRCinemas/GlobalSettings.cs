@@ -141,53 +141,50 @@ namespace JRCinemas
         {
             if (File.Exists(SETTINGS_FILE) && !isLoaded)
             {
-                using (FileStream file = new FileStream(SETTINGS_FILE, FileMode.Open))
+                using (StreamReader reader = new StreamReader(SETTINGS_FILE))
                 {
-                    using (StreamReader reader = new StreamReader(file))
+                    while (!reader.EndOfStream)
                     {
-                        while (!reader.EndOfStream)
+                        string[] data = reader.ReadLine().Split('\t');
+                        if (!string.IsNullOrEmpty(data[0]))
                         {
-                            string[] data = reader.ReadLine().Split('\t');
-                            if (!string.IsNullOrEmpty(data[0]))
+                            switch (data[0].ToUpper())
                             {
-                                switch (data[0].ToUpper())
-                                {
-                                    case FORMAT_SETTING_INCPORT:
-                                        incomingPort = int.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_GMAXCONN:
-                                        globalMaxConnections = int.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_TMAXCONN:
-                                        torrentMaxConnections = int.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_USEDHT:
-                                        useDht = bool.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_USEENCYPTION:
-                                        useEncryption = bool.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_USEPEEREXCHANGE:
-                                        usePeerExchange = bool.Parse(data[1]);
-                                        break;
-                                    case FORMAT_SETTING_EXTORRENTARGS:
-                                        externalTorrentArgs = data[1];
-                                        break;
-                                    case FORMAT_SETTING_EXTTORRENTPATH:
-                                        externalTorrent = data[1];
-                                        break;
-                                    case FORMAT_SETTING_CODEBASE:
-                                        break;
-                                    case FORMAT_SETTING_DOWNLOADDIR:
-                                        downloadDirectory = data[1];
-                                        break;
-                                    case FORMAT_SETTING_USEINTERNAL:
-                                        useInternal = bool.Parse(data[1]);
-                                        break;
-                                    default:
-                                        MessageBox.Show("Unknown label", data[0]);
-                                        break;
-                                }
+                                case FORMAT_SETTING_INCPORT:
+                                    incomingPort = int.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_GMAXCONN:
+                                    globalMaxConnections = int.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_TMAXCONN:
+                                    torrentMaxConnections = int.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_USEDHT:
+                                    useDht = bool.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_USEENCYPTION:
+                                    useEncryption = bool.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_USEPEEREXCHANGE:
+                                    usePeerExchange = bool.Parse(data[1]);
+                                    break;
+                                case FORMAT_SETTING_EXTORRENTARGS:
+                                    externalTorrentArgs = data[1];
+                                    break;
+                                case FORMAT_SETTING_EXTTORRENTPATH:
+                                    externalTorrent = data[1];
+                                    break;
+                                case FORMAT_SETTING_CODEBASE:
+                                    break;
+                                case FORMAT_SETTING_DOWNLOADDIR:
+                                    downloadDirectory = data[1];
+                                    break;
+                                case FORMAT_SETTING_USEINTERNAL:
+                                    useInternal = bool.Parse(data[1]);
+                                    break;
+                                default:
+                                    MessageBox.Show("Unknown label", data[0]);
+                                    break;
                             }
                         }
                     }
@@ -216,14 +213,9 @@ namespace JRCinemas
             builder.AppendFormat(FORMAT_SETTING_DATA, FORMAT_SETTING_EXTORRENTARGS, externalTorrentArgs);
             builder.AppendFormat(FORMAT_SETTING_DATA, FORMAT_SETTING_DOWNLOADDIR, downloadDirectory);
 
-            using (FileStream file = new FileStream(SETTINGS_FILE, FileMode.Create))
+            using (StreamWriter writer = new StreamWriter(SETTINGS_FILE))
             {
-                using (StreamWriter writer = new StreamWriter(file))
-                {
-                    writer.WriteLine(builder.ToString());
-                    writer.Close();
-                }
-                file.Close();
+                writer.WriteLine(builder.ToString());
             }
         }
     }
